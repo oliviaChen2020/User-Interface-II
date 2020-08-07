@@ -50,9 +50,6 @@ table {
 
 .container{
     background-color: rgb(62, 118, 122);
-    border:1px solid black;
-    width:90%;
-    margin:20px auto;
     min-height: 400px;
 }
 
@@ -62,7 +59,7 @@ h1{
 .top{
     display:flex;
     justify-content: space-between;
-    margin: 20px 20px 20px;
+    padding: 20px 20px;
 }
 .center-image{
     display: block;
@@ -73,7 +70,6 @@ h1{
 
 .image-container{
     width:900px;
-    border:1px solid black;
     margin:10px auto;
     display:flex;
     justify-content: space-around;
@@ -86,8 +82,8 @@ footer{
 }
 button{
     display: block;
-    margin:0 auto;
-    padding:1%;
+    margin-right:-5px;
+    padding:8px;
     border-radius: 0rem;
     background-color: brown;
     
@@ -99,11 +95,22 @@ button{
 .bottom-button{
     text-align:center;
 }
+
+.right a{
+    text-decoration: none;
+    border:1px solid black;
+    transition: 2s;
+    margin-right: -5px;
+    padding: 6px;
+}
+
 a{
     text-decoration: none;
-    border:2px solid black;
+    border:1px solid black;
     transition: 2s;
 }
+
+
 a:hover{
     background-color:white;
     color:black;
