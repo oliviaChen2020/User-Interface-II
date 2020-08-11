@@ -2,7 +2,7 @@
    v2.0 | 20110126
    License: none (public domain)
 */
-
+@import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -49,43 +49,55 @@ table {
 
 
 .container{
-    background-color: rgb(62, 118, 122);
-    min-height: 400px;
+    background-image: url("https://images.app.goo.gl/pbmudrtdHNnEw69F9");
+    background-size:cover;
+    background-position:top;
+    height:400px;
 }
 
 h1{
     font-size: 40px;
+    font-family: 'Monoton', cursive;;
 }
 .top{
     display:flex;
     justify-content: space-between;
+    position: fixed;
+    width: 100%;
     padding: 20px 20px;
+    background-color:rgb(206, 50, 76);
+}
+
+.middle-content{
+    padding:2%;
+    background-image: url("https://wallpaperaccess.com/full/786375.jpg");
+    background-size:cover;
 }
 .center-image{
     display: block;
     width:700px;
     height:300px;
     margin: 0 auto;
+    border-radius:15%;
 }
 
 .image-container{
-    width:900px;
-    margin:10px auto;
     display:flex;
     justify-content: space-around;
+    margin:3% 0;
 }
+.image-container img{
+    width:30%;
+}
+
 footer{
-    background-color:pink;
+    background-image: url("https://www.farmersalmanac.com/wp-content/uploads/2010/11/sunrise.jpg");
+    background-size: cover;
+    background-position: center;
     border:1px solid black;
     padding:80px;
     text-align:center;
 }
-button{
-    display: block;
-    margin-right:-5px;
-    padding:8px;
-    border-radius: 0rem;
-    background-color: brown;
     
 }
 .bottom-text{
@@ -96,22 +108,33 @@ button{
     text-align:center;
 }
 
-.right a{
+.navBar{
+    margin-right: 2%;
+
+}
+.navBar a{
+    font-size: 25px;
     text-decoration: none;
-    border:1px solid black;
-    transition: 2s;
     margin-right: -5px;
     padding: 6px;
 }
 
 a{
     text-decoration: none;
-    border:1px solid black;
-    transition: 2s;
+
 }
 
+.contact-me{
+    font-size:30px;
+    border-radius: 15%;
+    background-color: burlywood;
+}
 
 a:hover{
-    background-color:white;
-    color:black;
+    background-color:black;
+    color:white;
+}
+.contact-me:hover{
+    color:white;
+    background-color: orange;
 }
