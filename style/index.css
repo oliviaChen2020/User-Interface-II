@@ -138,3 +138,15 @@ a:hover{
     color:white;
     background-color: orange;
 }
+@media(max-width:500px){
+
+    .top{
+        background-color: palevioletred;
+    }
+    .navBar {
+        margin: 0;
+    }
+    .navBar a{
+        display: block;
+    }
+}
