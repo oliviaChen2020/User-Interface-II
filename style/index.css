@@ -42,18 +42,13 @@ q:before, q:after {
 	content: '';
 	content: none;
 }
+
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
 
 
-.container{
-    background-image: url("https://images.app.goo.gl/pbmudrtdHNnEw69F9");
-    background-size:cover;
-    background-position:top;
-    height:400px;
-}
 
 h1{
     font-size: 40px;
@@ -63,9 +58,9 @@ h1{
     display:flex;
     justify-content: space-between;
     position: fixed;
-    width: 100%;
     padding: 20px 20px;
     background-color:rgb(206, 50, 76);
+    width: 100%;
 }
 
 .middle-content{
@@ -75,19 +70,20 @@ h1{
 }
 .center-image{
     display: block;
-    width:700px;
+    width: 100%;
     height:300px;
     margin: 0 auto;
     border-radius:15%;
 }
 
 .image-container{
-    display:flex;
-    justify-content: space-around;
-    margin:3% 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
 }
 .image-container img{
-    width:30%;
+    width: 28%;
+    padding:2%;
 }
 
 footer{
@@ -99,7 +95,7 @@ footer{
     text-align:center;
 }
     
-}
+
 .bottom-text{
     font-family: fantasy;
     font-size: 20px;
@@ -115,7 +111,7 @@ footer{
 .navBar a{
     font-size: 25px;
     text-decoration: none;
-    margin-right: -5px;
+    margin-right: 4px;
     padding: 6px;
 }
 
@@ -139,14 +135,29 @@ a:hover{
     background-color: orange;
 }
 @media(max-width:500px){
-
+    .top{
+        position: inherit;
+        text-align:center ;
+    }
+    
+    .middle-content{
+        background-image: none;
+    }
+    .center-image {
+        width: 100%;
+    }
     .top{
         background-color: palevioletred;
+        display: block;
     }
     .navBar {
         margin: 0;
     }
     .navBar a{
         display: block;
+    }
+    .image-container img{
+        width: 46%;
+        padding: 2%;
     }
 }
